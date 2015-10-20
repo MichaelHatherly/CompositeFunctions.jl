@@ -21,7 +21,7 @@ build_script:
 # Need to convert from shallow to complete for Pkg.clone to work
   - IF EXIST .git\shallow (git fetch --unshallow)
   - C:\projects\julia\bin\julia -e "versioninfo();
-      Pkg.clone(pwd(), \"CompositeFunctions\"); Pkg.build(\"CompositeFunctions\")"
+      Pkg.clone(pwd(), \"MergedMethods\"); Pkg.build(\"MergedMethods\")"
 
 test_script:
-  - C:\projects\julia\bin\julia --check-bounds=yes -e "Pkg.test(\"CompositeFunctions\")"
+  - C:\projects\julia\bin\julia --check-bounds=yes -e "Pkg.test(\"MergedMethods\")"

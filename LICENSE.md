@@ -1,4 +1,4 @@
-The CompositeFunctions.jl package is licensed under the MIT "Expat" License:
+The MergedMethods.jl package is licensed under the MIT "Expat" License:
 
 > Copyright (c) 2015: Michael Hatherly.
 >

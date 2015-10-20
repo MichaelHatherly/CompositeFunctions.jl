@@ -1,6 +1,6 @@
 # Collect coverage stats and send to Codecov.
 
-cd(Pkg.dir("CompositeFunctions"))
+cd(Pkg.dir("MergedMethods"))
 Pkg.add("Coverage")
 
 import Coverage: Codecov

@@ -9,4 +9,4 @@ julia:
 notifications:
   email: false
 after_success:
-    - julia -e 'include(Pkg.dir("CompositeFunctions", "test", "coverage.jl"))'
+    - julia -e 'include(Pkg.dir("MergedMethods", "test", "coverage.jl"))'

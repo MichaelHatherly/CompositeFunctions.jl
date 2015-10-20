@@ -1,3 +1,3 @@
-using Docile, CompositeFunctions
+using Docile, MergedMethods
 
 makedocs()

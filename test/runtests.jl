@@ -1,6 +1,6 @@
 module Tests
 
-using CompositeFunctions
+using MergedMethods
 using Base.Test
 
 module A
@@ -43,6 +43,6 @@ end
 
 @test h2(1) == B
 
-@test_throws ErrorException CompositeFunctions.pickmodule([], Tuple{})
+@test_throws ErrorException MergedMethods.pickmodule([], Tuple{})
 
 end

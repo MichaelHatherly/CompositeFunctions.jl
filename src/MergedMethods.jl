@@ -1,11 +1,11 @@
 __precompile__()
 
 """
-    CompositeFunctions
+    MergedMethods
 
 Merge functions from different modules into a single function.
 """
-module CompositeFunctions
+module MergedMethods
 
 using Base.Meta, Compat
 
