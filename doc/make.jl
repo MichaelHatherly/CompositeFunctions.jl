@@ -1,3 +1,0 @@
-using Docile, MergedMethods
-
-makedocs()

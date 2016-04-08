@@ -1,9 +1,13 @@
 __precompile__()
 
 """
-    MergedMethods
-
 Merge functions from different modules into a single function.
+
+This module provides two exported macros that can be used to merge different functions.
+
+- [`@merge`]({ref})
+- [`@kwmerge`]({ref})
+
 """
 module MergedMethods
 
@@ -12,9 +16,13 @@ using Base.Meta, Compat
 export @merge, @kwmerge
 
 """
-    @merge(func, modules...)
-
 Merge functions from different modules.
+
+**Signature**
+
+```julia
+@merge(func, modules...)
+```
 
 **Examples**
 
@@ -81,14 +89,18 @@ top:
 }
 ```
 
-*See also:* `@kwmerge`.
+*See also:* [`@kwmerge`]({ref}).
 """
 macro merge(func, modules...) buildmerge(func, false, modules) end
 
 """
-    @kwmerge(func, modules...)
-
 Variant of `@merge` with support for passing keyword arguments.
+
+**Signature**
+
+```julia
+@kwmerge(func, modules...)
+```
 
 **Examples**
 
@@ -102,7 +114,7 @@ f(1, a = 2, b =  3)
 This macro should only be used when keywords are actually needed since the generated code
 will probably not be as efficient as that of `@merge`.
 
-*See also:* `@merge`.
+*See also:* [`@merge`]({ref}).
 """
 macro kwmerge(func, modules...) buildmerge(func, true, modules) end
 
