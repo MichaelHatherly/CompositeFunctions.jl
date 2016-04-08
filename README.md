@@ -33,7 +33,7 @@ Documentation is generated using [`Documenter.jl`][documenter-url].
 [travis-img]: https://travis-ci.org/MichaelHatherly/MergedMethods.jl.svg?branch=master
 [travis-url]: https://travis-ci.org/MichaelHatherly/MergedMethods.jl
 
-[appveyor-img]: https://ci.appveyor.com/api/projects/status/tae2cgo56og98t6d?svg=true
+[appveyor-img]: https://ci.appveyor.com/api/projects/status/469fsk5pkuqpa5jh?svg=true
 [appveyor-url]: https://ci.appveyor.com/project/MichaelHatherly/mergedmethods-jl
 
 [codecov-img]: http://codecov.io/github/MichaelHatherly/MergedMethods.jl/coverage.svg?branch=master
