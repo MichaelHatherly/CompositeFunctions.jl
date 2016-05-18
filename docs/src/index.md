@@ -4,7 +4,8 @@
 
 ## Contents
 
-    {contents}
+```@contents
+```
 
 ## Installation
 
@@ -16,11 +17,13 @@ Pkg.add("MergedMethods")
 
 ## Index
 
-    {index}
+```@index
+```
 
 ## Public Interface
 
-    {docs}
-    MergedMethods
-    @merge
-    @kwmerge
+```@docs
+MergedMethods
+@merge
+@kwmerge
+```
