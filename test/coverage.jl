@@ -5,6 +5,6 @@ get(ENV, "TRAVIS_JULIA_VERSION", "") == "nightly" || exit()
 Pkg.add("Coverage")
 using Coverage
 
-cd(Pkg.dir("MergedMethods")) do
+cd(joinpath(dirname(@__FILE__), "..")) do
     Codecov.submit(Codecov.process_folder())
 end
