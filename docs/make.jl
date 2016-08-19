@@ -1,11 +1,16 @@
 using Documenter, MergedMethods
 
 makedocs(
-    modules = MergedMethods,
-    clean   = false,
+    sitename = "MergedMethods.jl",
+    modules = [MergedMethods],
+    format = Documenter.Formats.HTML,
+    clean = false,
+    pages = Any["Home" => "index.md"],
 )
 
 deploydocs(
-    deps = Deps.pip("pygments", "mkdocs", "mkdocs-material"),
+    target = "build",
+    deps = nothing,
+    make = nothing,
     repo = "github.com/MichaelHatherly/MergedMethods.jl.git",
 )
