@@ -3,7 +3,7 @@ using Documenter, MergedMethods
 makedocs(
     sitename = "MergedMethods.jl",
     modules = [MergedMethods],
-    format = Documenter.Formats.HTML,
+    format = :html,
     clean = false,
     pages = Any["Home" => "index.md"],
 )
